@@ -24,19 +24,16 @@ public class MenuFadeManager : MonoBehaviour
     var noMenuCurrentlyOpen = currentOpenedMenu == null;
 
     if (targetIsCurrentMenuObject) {
-      Debug.Log("Switch");
       StartCoroutine(DoFade(canvGroup, 1, 0));
       currentOpenedMenu = null;
 
     } else if (closeCurrentMenuAndOpenOther && !noMenuCurrentlyOpen) {
-      Debug.Log("Swap");
       StartCoroutine(DoFade(currentOpenedMenu, 1, 0));
       currentOpenedMenu = null;
       StartCoroutine(DoFade(canvGroup, 0, 1));
       currentOpenedMenu = canvGroup;
 
     } else if (noMenuCurrentlyOpen) {
-      Debug.Log("Open New");
       StartCoroutine(DoFade(canvGroup, 0, 1));
       currentOpenedMenu = canvGroup;
     }
