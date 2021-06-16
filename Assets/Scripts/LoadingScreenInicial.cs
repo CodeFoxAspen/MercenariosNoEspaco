@@ -9,8 +9,8 @@ public class LoadingScreenInicial : MonoBehaviour
     [SerializeField]
     private Image _progressBar;
     public float loadDuration = 2.0f;
-    public float secondsToWait = 3.0f;
-    public int sceneIdToLoad = 1;
+    public float secondsToWait = 4.0f;
+    public static int sceneIdToLoad = 1;
     private IEnumerator Start()
     {
         StartCoroutine(RunProgressBar());
@@ -30,5 +30,10 @@ public class LoadingScreenInicial : MonoBehaviour
             yield return null;
         }
         yield return 1;
+    }
+
+    public static void setSceneIdToLoad(int newId) 
+    {
+        sceneIdToLoad = newId;
     }
 }

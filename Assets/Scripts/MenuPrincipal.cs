@@ -11,7 +11,8 @@ public class MenuPrincipal : MonoBehaviour
   }
   public void Playgame()
   {
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    LoadingScreenInicial.setSceneIdToLoad(2);
+    SceneManager.LoadScene(0);
   }
 
   public void OpenSettings()
