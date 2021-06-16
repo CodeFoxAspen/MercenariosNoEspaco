@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/LoadScreenInitial.unity
+    guid: 5cda47006ad5c47439263679d156558f
+  - enabled: 1
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: c1a992aa380e31c44b322667ae2139e7
+  - enabled: 1
+    path: Assets/Scenes/TelaBatalha.unity
+    guid: 67327aecfdf4830438c2178a1022ef57
   m_configObjects: {}
